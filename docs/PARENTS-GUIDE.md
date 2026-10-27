@@ -8,12 +8,14 @@ This guide takes about 5 minutes. You don't need an account, an app store or any
 
 ## 1. What it is
 
-Blini's Playroom is a set of nine calm toys for children of about 1 to 5 years:
+Blini's Playroom is a set of eleven calm toys for children of about 1 to 5 years:
 
 - bubbles, singing blobs, finger paint, shape puzzles, a little garden and counting stars
 - a **Busy Board** with cables to plug in, light switches, buttons and a slider
 - **Plug It In**: a power strip with a lamp, fan, radio, toaster, phone and TV that work when plugged in
 - **Home Gadgets**: a doorbell, a door, a water tap, a padlock and key, a dial and a zipper
+- **Kitchen**: a cooker with a bubbling pot and a frying egg, a fridge, a washing machine, a microwave, a kettle and a blender
+- **Little Mechanic**: a horn, headlights, windscreen wipers, a tyre pump, a fuel pump, an ignition key and wheel bolts
 
 - There is nothing to read, nothing to win or lose, and no ads.
 - Nothing about your child is collected. Everything you set up stays on your phone.

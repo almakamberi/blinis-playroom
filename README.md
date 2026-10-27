@@ -23,6 +23,8 @@ No ads. No tracking. No scores, timers or winning and losing. Nothing to read. W
 <p>
   <img src="docs/screenshots/plug-it-in.png" width="180" alt="Plug It In">
   <img src="docs/screenshots/home-gadgets.png" width="180" alt="Home Gadgets">
+  <img src="docs/screenshots/kitchen.png" width="180" alt="Kitchen">
+  <img src="docs/screenshots/little-mechanic.png" width="180" alt="Little Mechanic">
 </p>
 
 ---
@@ -31,7 +33,7 @@ No ads. No tracking. No scores, timers or winning and losing. Nothing to read. W
 
 ### The Playroom (`/`)
 
-Nine original toys. Every touch gives a soft sound plus some movement, so no tap is ever "dead". Multi-touch works, so two hands can play at once.
+Eleven original toys. Every touch gives a soft sound plus some movement, so no tap is ever "dead". Multi-touch works, so two hands can play at once.
 
 | Toy | What happens | Grows with the child |
 |---|---|---|
@@ -44,6 +46,8 @@ Nine original toys. Every touch gives a soft sound plus some movement, so no tap
 | **Busy Board** | A wooden board of real-feeling gadgets: flip light switches to turn bulbs on, press big squishy buttons, slide the music slider, and plug coloured cables into their sockets. Everything on and plugged in starts a little light show. | 2 → 3 → 4 switches and cables; babies can plug any cable into any socket, older children match colours |
 | **Plug It In** | A power strip and household appliances on cables. Plug one in and it works: the lamp lights up, the fan spins, the radio plays a tune, the toaster pops toast, the phone charges, the TV switches on. Unplugged things do nothing, and their plug wiggles as a hint. | 3 → 4 → 6 appliances; Little kid adds a master power switch |
 | **Home Gadgets** | Everyday things on a wooden board: a doorbell (ding-dong), a door with a surprise visitor behind it, a water tap that fills a cup, a padlock you open with a key, a dial with a ring of lights, and a zipper hiding a star. | Baby: bell, door, tap. Toddler adds a slide bolt on the door and the padlock. Little kid adds the dial and zipper |
+| **Kitchen** | A cooker with knobs that light the rings (the pot bubbles and steams, the egg fries), a fridge whose light comes on when it opens (tap the food), a washing machine that spins and bubbles, a microwave that counts down and dings, a kettle that rumbles and clicks off, and a blender that turns fruit into a smoothie. | Baby: cooker, fridge, washing machine. Toddler adds the microwave. Little kid adds the kettle and blender |
+| **Little Mechanic** | A steering wheel with a horn, a car face whose headlights wake up, windscreen wipers that clear the rain, a tyre to pump up, a fuel pump nozzle to drag to the car, an ignition key that starts the engine (tap again to drive off), and wheel bolts to unscrew until the wheel comes off. | Baby: horn, headlights, wipers. Toddler adds the tyre pump. Little kid: headlights, wipers, tyre, fuel, engine, bolts |
 
 Kid-UX rules followed throughout:
 
@@ -153,4 +157,5 @@ Tip: service workers and the install prompt need HTTPS (or `localhost`). To test
 - Parent accounts and sync across devices (Supabase or Firebase)
 - Family voice clips ("Hi!", "Well done!") and Animal Sounds with recorded voices
 - Photo Frame: family photos floating in as bubbles
-- More Busy Board gadgets (dial, zipper, door with a surprise), Lullaby Mode
+- More practical boards: Keys & Locks, Washing Line, Garage & Traffic Lights, Tool Bench, Remote Control, Phone Call
+- Lullaby Mode
