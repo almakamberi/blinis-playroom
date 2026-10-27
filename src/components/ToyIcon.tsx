@@ -88,6 +88,27 @@ const ICONS: Record<ToyId, ReactElement> = {
       <rect x="40" y="43" width="18" height="14" rx="4" fill="#F2C14E" />
     </g>
   ),
+  kitchen: (
+    <g>
+      <rect x="6" y="18" width="52" height="40" rx="6" fill="#FFFFFF" stroke="#B9B2AA" strokeWidth="1.5" />
+      <circle cx="20" cy="50" r="4" fill="#E8676B" /><circle cx="44" cy="50" r="4" fill="#B9B2AA" />
+      <rect x="12" y="12" width="22" height="14" rx="4" fill="#5FAFE0" />
+      <ellipse cx="23" cy="12" rx="13" ry="3" fill="#4A9AD0" />
+      <circle cx="44" cy="30" r="8" fill="#5A5560" />
+      <ellipse cx="44" cy="30" rx="5" ry="4" fill="#FFFFFF" /><circle cx="44" cy="30" r="2" fill="#F7C04A" />
+      <circle cx="18" cy="6" r="3" fill="#FFFFFF" stroke="#D5DCE3" />
+    </g>
+  ),
+  mechanic: (
+    <g>
+      <rect x="6" y="26" width="52" height="20" rx="8" fill="#E8676B" />
+      <rect x="16" y="14" width="30" height="16" rx="7" fill="#E8676B" />
+      <rect x="20" y="17" width="10" height="9" rx="3" fill="#BFE3F5" /><rect x="33" y="17" width="10" height="9" rx="3" fill="#BFE3F5" />
+      <circle cx="18" cy="48" r="7" fill="#3B3340" /><circle cx="46" cy="48" r="7" fill="#3B3340" />
+      <circle cx="18" cy="48" r="3" fill="#C9C2B8" /><circle cx="46" cy="48" r="3" fill="#C9C2B8" />
+      <circle cx="56" cy="32" r="3" fill="#FFF3C4" />
+    </g>
+  ),
   stars: (
     <g>
       <circle cx="32" cy="32" r="30" fill="#4A4F80" />

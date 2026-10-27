@@ -1,4 +1,4 @@
-export type ToyId = 'bubbles' | 'blobs' | 'paint' | 'shapes' | 'garden' | 'stars' | 'busy' | 'plugs' | 'gadgets';
+export type ToyId = 'bubbles' | 'blobs' | 'paint' | 'shapes' | 'garden' | 'stars' | 'busy' | 'plugs' | 'gadgets' | 'kitchen' | 'mechanic';
 export type Level = 'baby' | 'toddler' | 'little';
 export type ThemeId = 'sky' | 'peach' | 'mint' | 'lavender' | 'night';
 export type SoundStyle = 'chimes' | 'marimba' | 'musicbox';
@@ -32,6 +32,8 @@ export const TOYS: { id: ToyId; name: string; blurb: string; accent: string }[] 
   { id: 'stars', name: 'Counting Stars', blurb: 'Tap stars to light them up and count.', accent: '#F7D774' },
   { id: 'busy', name: 'Busy Board', blurb: 'Plug cables into sockets, flip light switches, press buttons and slide.', accent: '#F2A65A' },
   { id: 'plugs', name: 'Plug It In', blurb: 'Plug a lamp, fan, radio, toaster, phone and TV into a power strip and watch them work.', accent: '#F2C14E' },
+  { id: 'kitchen', name: 'Kitchen', blurb: 'Cooker knobs, a bubbling pot, fridge, washing machine, microwave, kettle and blender.', accent: '#F4A9C0' },
+  { id: 'mechanic', name: 'Little Mechanic', blurb: 'Horn, headlights, wipers, pump up a tyre, fill up with fuel, start the engine, unscrew wheel bolts.', accent: '#E8676B' },
   { id: 'gadgets', name: 'Home Gadgets', blurb: 'Doorbell, a door with a bolt, a water tap, padlock and key, a dial and a zipper.', accent: '#E8676B' },
 ];
 

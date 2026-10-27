@@ -1,30 +1,5 @@
-import type { Palette } from '../settings/themes';
-import type { ToyEnv, ToyFactory } from './types';
-import { approach, clamp, dist, drawFace, panFor, rand, Ripples, Sparks, withAlpha } from './util';
-
-interface Rect { x: number; y: number; w: number; h: number }
-
-/** One gadget lives in one panel of the board and handles its own touches. */
-interface Gadget {
-  frame(dt: number, t: number): void;
-  down(id: number, x: number, y: number): void;
-  move(id: number, x: number, y: number): void;
-  up(id: number, x: number, y: number): void;
-  invite(): void;
-}
-
-interface Kit {
-  ctx: CanvasRenderingContext2D;
-  env: ToyEnv;
-  r: Rect;
-  ink: string;
-  sparks: Sparks;
-  p: Palette;
-}
-
-const cx = (r: Rect) => r.x + r.w / 2;
-const cy = (r: Rect) => r.y + r.h / 2;
-const size = (r: Rect) => Math.min(r.w, r.h);
+import { cx, cy, makePanelBoard, size, type Gadget, type Kit } from './panels';
+import { approach, clamp, dist, drawFace, panFor, rand, withAlpha } from './util';
 
 /* ---------------- Doorbell: ding-dong ---------------- */
 
@@ -354,7 +329,8 @@ function padlock({ ctx, env, r, ink, sparks }: Kit): Gadget {
     },
     move(id, x, y) {
       if (key.holder !== id) return;
-      key.x = x + key.gdx; key.y = y + key.gdy;
+      key.x = clamp(x + key.gdx, r.x + 20, r.x + r.w - 20);
+      key.y = clamp(y + key.gdy, r.y + 30, r.y + r.h - 20);
     },
     up(id) {
       if (key.holder !== id) return;
@@ -497,82 +473,20 @@ function zipper({ ctx, env, r, ink, sparks }: Kit): Gadget {
 
 /* ---------------- The board ---------------- */
 
+type Kind = 'bell' | 'door' | 'tap' | 'lock' | 'dial' | 'zip';
+
 /** Home Gadgets: doorbell, door with a bolt, water tap, padlock and key, dial and zipper. */
-export const homeGadgets: ToyFactory = (ctx, env) => {
-  const kinds = [
+export const homeGadgets = makePanelBoard<Kind>(
+  [
     ['bell', 'door', 'tap'],
     ['bell', 'door', 'tap', 'lock'],
     ['bell', 'door', 'tap', 'lock', 'dial', 'zip'],
-  ][env.level];
-  let cells: { r: Rect; g: Gadget }[] = [];
-  const owner = new Map<number, Gadget>();
-  const sparks = new Sparks();
-  const ripples = new Ripples();
-  const ink = env.palette.night ? '#2A2530' : '#3B3340';
-
-  function layout() {
-    const n = kinds.length;
-    const portrait = env.h > env.w * 1.1;
-    const top = portrait ? 104 : 14, side = portrait ? 16 : 104;
-    const W = env.w - side * 2, H = env.h - top * 2;
-    const cols = portrait ? (n === 3 ? 1 : 2) : n === 6 ? 3 : n;
-    const rows = Math.ceil(n / cols);
-    const gap = 10;
-    const cw = (W - gap * (cols - 1)) / cols, ch = (H - gap * (rows - 1)) / rows;
-    owner.clear();
-    cells = kinds.map((k, i) => {
-      const r: Rect = { x: side + (i % cols) * (cw + gap), y: top + Math.floor(i / cols) * (ch + gap), w: cw, h: ch };
-      const kit: Kit = { ctx, env, r, ink, sparks, p: env.palette };
-      const g =
-        k === 'bell' ? doorbell(kit)
-        : k === 'door' ? door(kit, env.level > 0)
-        : k === 'tap' ? waterTap(kit)
-        : k === 'lock' ? padlock(kit)
-        : k === 'dial' ? dial(kit)
-        : zipper(kit);
-      return { r, g };
-    });
-  }
-
-  const at = (x: number, y: number) => cells.find(({ r }) => x >= r.x && x <= r.x + r.w && y >= r.y && y <= r.y + r.h);
-
-  return {
-    resize() { layout(); },
-    frame(dt, t) {
-      ctx.fillStyle = env.palette.bg;
-      ctx.fillRect(0, 0, env.w, env.h);
-      for (const { r, g } of cells) {
-        ctx.fillStyle = env.palette.night ? '#3C342E' : '#D9BC91';
-        ctx.beginPath(); ctx.roundRect(r.x, r.y + 5, r.w, r.h, 22); ctx.fill();
-        ctx.fillStyle = env.palette.night ? '#4A4038' : '#EBD3AE';
-        ctx.beginPath(); ctx.roundRect(r.x, r.y, r.w, r.h, 22); ctx.fill();
-        ctx.fillStyle = withAlpha(ink, 0.2);
-        for (const [sx, sy] of [[r.x + 14, r.y + 14], [r.x + r.w - 14, r.y + 14], [r.x + 14, r.y + r.h - 14], [r.x + r.w - 14, r.y + r.h - 14]]) {
-          ctx.beginPath(); ctx.arc(sx, sy, 4, 0, Math.PI * 2); ctx.fill();
-        }
-        g.frame(dt, t);
-      }
-      sparks.draw(ctx, dt);
-      ripples.draw(ctx, dt);
-    },
-    down(id, x, y) {
-      const c = at(x, y);
-      if (!c) {
-        ripples.add(x, y, env.palette.soft[2]);
-        env.audio.play(1, { vel: 0.18, pan: panFor(x, env.w) });
-        return;
-      }
-      owner.set(id, c.g);
-      c.g.down(id, x, y);
-    },
-    move(id, x, y) { owner.get(id)?.move(id, x, y); },
-    up(id, x, y) {
-      owner.get(id)?.up(id, x, y);
-      owner.delete(id);
-    },
-    invite() {
-      const c = cells[Math.floor(Math.random() * cells.length)];
-      c?.g.invite();
-    },
-  };
-};
+  ],
+  (kind, kit, level) =>
+    kind === 'bell' ? doorbell(kit)
+    : kind === 'door' ? door(kit, level > 0)
+    : kind === 'tap' ? waterTap(kit)
+    : kind === 'lock' ? padlock(kit)
+    : kind === 'dial' ? dial(kit)
+    : zipper(kit),
+);

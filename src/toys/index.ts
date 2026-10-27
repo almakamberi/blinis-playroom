@@ -9,6 +9,8 @@ import { countingStars } from './stars';
 import { busyBoard } from './busy';
 import { plugItIn } from './plugs';
 import { homeGadgets } from './gadgets';
+import { kitchen } from './kitchen';
+import { littleMechanic } from './mechanic';
 
 export const TOY_FACTORIES: Record<ToyId, ToyFactory> = {
   bubbles: bubblePop,
@@ -20,4 +22,6 @@ export const TOY_FACTORIES: Record<ToyId, ToyFactory> = {
   busy: busyBoard,
   plugs: plugItIn,
   gadgets: homeGadgets,
+  kitchen,
+  mechanic: littleMechanic,
 };
