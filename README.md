@@ -2,7 +2,7 @@
 
 A calm, open-ended toy app for little ones (about 1 to 5 years old), plus a separate **Parent Corner** where a grown-up can personalise everything.
 
-No ads. No tracking. No scores, timers or winning and losing. Nothing to read. Works offline. Installs on Android straight from Chrome, with no app store.
+No ads. No tracking. No scores, timers or winning and losing. Nothing to read. Works offline. Installs on Android phones **and tablets** straight from Chrome, with no app store. On tablets, every toy automatically scales up so it stays big and chunky.
 
 **▶ Play it:** https://almakamberi.github.io/blinis-playroom/
 **⚙ Parent Corner:** https://almakamberi.github.io/blinis-playroom/parent/
@@ -26,6 +26,18 @@ No ads. No tracking. No scores, timers or winning and losing. Nothing to read. W
   <img src="docs/screenshots/kitchen.png" width="180" alt="Kitchen">
   <img src="docs/screenshots/little-mechanic.png" width="180" alt="Little Mechanic">
 </p>
+<p>
+  <img src="docs/screenshots/keys-and-locks.png" width="360" alt="Keys & Locks on a tablet">
+  <img src="docs/screenshots/town-road.png" width="360" alt="Town Road on a tablet">
+</p>
+<p>
+  <img src="docs/screenshots/laundry-day.png" width="360" alt="Laundry Day on a tablet">
+  <img src="docs/screenshots/remote-control.png" width="360" alt="Remote Control on a tablet">
+</p>
+<p>
+  <img src="docs/screenshots/tool-bench.png" width="360" alt="Tool Bench on a tablet">
+  <img src="docs/screenshots/phone-call.png" width="360" alt="Phone Call on a tablet">
+</p>
 
 ---
 
@@ -33,7 +45,7 @@ No ads. No tracking. No scores, timers or winning and losing. Nothing to read. W
 
 ### The Playroom (`/`)
 
-Eleven original toys. Every touch gives a soft sound plus some movement, so no tap is ever "dead". Multi-touch works, so two hands can play at once.
+Seventeen original toys. Every touch gives a soft sound plus some movement, so no tap is ever "dead". Multi-touch works, so two hands can play at once.
 
 | Toy | What happens | Grows with the child |
 |---|---|---|
@@ -48,6 +60,12 @@ Eleven original toys. Every touch gives a soft sound plus some movement, so no t
 | **Home Gadgets** | Everyday things on a wooden board: a doorbell (ding-dong), a door with a surprise visitor behind it, a water tap that fills a cup, a padlock you open with a key, a dial with a ring of lights, and a zipper hiding a star. | Baby: bell, door, tap. Toddler adds a slide bolt on the door and the padlock. Little kid adds the dial and zipper |
 | **Kitchen** | A cooker with knobs that light the rings (the pot bubbles and steams, the egg fries), a fridge whose light comes on when it opens (tap the food), a washing machine that spins and bubbles, a microwave that counts down and dings, a kettle that rumbles and clicks off, and a blender that turns fruit into a smoothie. | Baby: cooker, fridge, washing machine. Toddler adds the microwave. Little kid adds the kettle and blender |
 | **Little Mechanic** | A steering wheel with a horn, a car face whose headlights wake up, windscreen wipers that clear the rain, a tyre to pump up, a fuel pump nozzle to drag to the car, an ignition key that starts the engine (tap again to drive off), and wheel bolts to unscrew until the wheel comes off. | Baby: horn, headlights, wipers. Toddler adds the tyre pump. Little kid: headlights, wipers, tyre, fuel, engine, bolts |
+| **Keys & Locks** | A street of little coloured doors, each with a padlock and someone peeking through the round window. Drag the right key to a lock: it turns, the lock pops off, the door swings open and an animal friend (cat, puppy, owl, duck, cow, bunny, frog, chick) says hello in its own little tune. Open them all for a party. | 3 doors, any key fits → 4 doors, match the colour → 6 doors, match the shape on gold keys |
+| **Laundry Day** | Drag wet clothes from the grass onto the washing line, where pegs click them on. They drip, sway in the wind and dry in the sun until they're fluffy and smiling. Tap the cloud for rain (wet again!), tap the sun to dry faster, and a little bird comes to sing on the line. Tap dry clothes to fold them into the basket. | 3 → 5 → 7 pieces of clothing |
+| **Town Road** | Tap the garage and out rolls a car, bus, fire engine (siren and flashing light), ice-cream van (jingle), tractor or taxi. The child works the traffic light and the traffic queues at red. A crossing button lets a mother duck lead her ducklings over the road, and the car wash's spinning brushes leave everything sparkling. | Baby: garage and traffic light. Toddler adds the duck crossing. Little kid adds the car wash |
+| **Tool Bench** | Hammer nails flat; hold the drill to make a hole, and a picture of Blini goes up on it; roll paint onto a fence in your colour; saw a plank until it tips apart; hold the screwdriver to drive screws in; pull out the tape measure and let it zip back. | Baby: hammer, drill, roller. Toddler adds the saw. Little kid adds the screwdriver and tape measure |
+| **Remote Control** | A cosy living room and a big chunky remote. Each press sends a little beam to its target: the TV (six channels: aquarium, space rocket, farm, dancing Blini, rain, a boat at sea), the lamp, the curtains, the music (the sleepy cat dances) and a robot vacuum that zooms round eating crumbs and bumps into the cat. You can also tap things in the room directly. | Baby: TV, channels, lamp. Toddler adds the curtains. Little kid adds music and the robot |
+| **Phone Call** | A big toy phone. Tap a friend's face and it rings ring-ring, then they answer on a video call and chat in their own musical voice; tap them for giggles and hearts. A small picture of your child (from Parent Corner) appears in the corner like a real video call, and a "Me" contact shows their photo. Toddlers and up get a keypad with musical number buttons. | 3 → 5 → 6 friends; keypad from Toddler |
 
 Kid-UX rules followed throughout:
 
@@ -157,5 +175,6 @@ Tip: service workers and the install prompt need HTTPS (or `localhost`). To test
 - Parent accounts and sync across devices (Supabase or Firebase)
 - Family voice clips ("Hi!", "Well done!") and Animal Sounds with recorded voices
 - Photo Frame: family photos floating in as bubbles
-- More practical boards: Keys & Locks, Washing Line, Garage & Traffic Lights, Tool Bench, Remote Control, Phone Call
+- Family voice clips for Phone Call (a parent records "Hello!" for each friend)
+- More boards: Bath Time, Supermarket Till, Building Site, Train Set
 - Lullaby Mode

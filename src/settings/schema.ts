@@ -1,4 +1,5 @@
-export type ToyId = 'bubbles' | 'blobs' | 'paint' | 'shapes' | 'garden' | 'stars' | 'busy' | 'plugs' | 'gadgets' | 'kitchen' | 'mechanic';
+export type ToyId = 'bubbles' | 'blobs' | 'paint' | 'shapes' | 'garden' | 'stars' | 'busy' | 'plugs' | 'gadgets' | 'kitchen' | 'mechanic'
+  | 'locks' | 'laundry' | 'town' | 'tools' | 'remote' | 'phone';
 export type Level = 'baby' | 'toddler' | 'little';
 export type ThemeId = 'sky' | 'peach' | 'mint' | 'lavender' | 'night';
 export type SoundStyle = 'chimes' | 'marimba' | 'musicbox';
@@ -34,6 +35,12 @@ export const TOYS: { id: ToyId; name: string; blurb: string; accent: string }[] 
   { id: 'plugs', name: 'Plug It In', blurb: 'Plug a lamp, fan, radio, toaster, phone and TV into a power strip and watch them work.', accent: '#F2C14E' },
   { id: 'kitchen', name: 'Kitchen', blurb: 'Cooker knobs, a bubbling pot, fridge, washing machine, microwave, kettle and blender.', accent: '#F4A9C0' },
   { id: 'mechanic', name: 'Little Mechanic', blurb: 'Horn, headlights, wipers, pump up a tyre, fill up with fuel, start the engine, unscrew wheel bolts.', accent: '#E8676B' },
+  { id: 'locks', name: 'Keys & Locks', blurb: 'Little doors with padlocks. The right key opens each one and an animal friend says hello.', accent: '#B8A2E3' },
+  { id: 'laundry', name: 'Laundry Day', blurb: 'Peg wet clothes on the line; the sun dries them, a cloud brings rain, a bird visits.', accent: '#5FAFE0' },
+  { id: 'town', name: 'Town Road', blurb: 'Send vehicles out of the garage, work the traffic light, help ducks cross, wash the cars.', accent: '#6CC17A' },
+  { id: 'tools', name: 'Tool Bench', blurb: 'Hammer nails, drill a hole for a picture, paint the fence, saw a plank, screw and measure.', accent: '#C99A6B' },
+  { id: 'remote', name: 'Remote Control', blurb: 'Big remote buttons switch the TV channels, lamp, curtains, music and a robot vacuum.', accent: '#E8676B' },
+  { id: 'phone', name: 'Phone Call', blurb: 'Ring an animal friend for a video call; dial with musical number keys.', accent: '#5FAFE0' },
   { id: 'gadgets', name: 'Home Gadgets', blurb: 'Doorbell, a door with a bolt, a water tap, padlock and key, a dial and a zipper.', accent: '#E8676B' },
 ];
 

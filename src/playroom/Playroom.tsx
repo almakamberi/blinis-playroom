@@ -118,6 +118,7 @@ export function Playroom() {
                 palette={palette}
                 level={LEVEL_NUM[levelFor(settings, t.id)]}
                 active={!hello && !menu && !bedtime && i === room}
+                photo={settings.photo}
               />
             </section>
           ))}

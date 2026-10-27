@@ -2,13 +2,15 @@ import type { Palette } from '../settings/themes';
 import type { audio } from '../audio/engine';
 
 export interface ToyEnv {
-  /** Canvas size in CSS pixels; updated before resize() is called. */
+  /** Logical canvas size (CSS pixels, divided by the tablet scale); updated before resize(). */
   w: number;
   h: number;
   palette: Palette;
   /** 0 = baby, 1 = toddler, 2 = little kid */
   level: 0 | 1 | 2;
   audio: typeof audio;
+  /** The child's photo from Parent Corner, if one was added (never leaves the device). */
+  photo: string | null;
 }
 
 export interface Toy {

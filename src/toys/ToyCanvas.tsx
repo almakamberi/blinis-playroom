@@ -12,13 +12,23 @@ interface Props {
   palette: Palette;
   level: 0 | 1 | 2;
   active: boolean;
+  photo?: string | null;
 }
+
+/**
+ * Toys are designed for a phone-sized "logical" canvas. On tablets everything is
+ * scaled up so toys stay big and chunky instead of small and far apart.
+ */
+export const uiScale = (w: number, h: number) => Math.min(1.7, Math.max(1, Math.min(w, h) / 470));
+
+/** Cap the backing-store size so big tablets keep a smooth 60 fps. */
+const MAX_PIXELS = 3_600_000;
 
 /**
  * Hosts one toy on a canvas: handles DPR, resizing, the animation loop (only
  * while the room is on screen), multi-touch pointers and the idle invitation.
  */
-export function ToyCanvas({ factory, palette, level, active }: Props) {
+export function ToyCanvas({ factory, palette, level, active, photo = null }: Props) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const activeRef = useRef(active);
   const startRef = useRef<() => void>(() => {});
@@ -27,7 +37,8 @@ export function ToyCanvas({ factory, palette, level, active }: Props) {
   useEffect(() => {
     const canvas = canvasRef.current!;
     const ctx = canvas.getContext('2d', { alpha: false })!;
-    const env: ToyEnv = { w: 1, h: 1, palette, level, audio };
+    const env: ToyEnv = { w: 1, h: 1, palette, level, audio, photo };
+    let k = 1;
     let toy: Toy | null = null;
     let raf = 0;
     let last = 0;
@@ -35,14 +46,15 @@ export function ToyCanvas({ factory, palette, level, active }: Props) {
     let lastInvite = 0;
 
     const resize = () => {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
       const w = canvas.clientWidth, h = canvas.clientHeight;
       if (!w || !h) return;
-      env.w = w;
-      env.h = h;
+      const dpr = Math.min(window.devicePixelRatio || 1, 2, Math.sqrt(MAX_PIXELS / (w * h)));
+      k = uiScale(w, h);
+      env.w = w / k;
+      env.h = h / k;
       canvas.width = Math.round(w * dpr);
       canvas.height = Math.round(h * dpr);
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      ctx.setTransform(dpr * k, 0, 0, dpr * k, 0, 0);
       if (!toy) toy = factory(ctx, env);
       toy.resize();
       toy.frame(0, t); // draw immediately so sliding rooms are never blank
@@ -76,7 +88,7 @@ export function ToyCanvas({ factory, palette, level, active }: Props) {
 
     const pos = (e: PointerEvent) => {
       const r = canvas.getBoundingClientRect();
-      return [e.clientX - r.left, e.clientY - r.top] as const;
+      return [(e.clientX - r.left) / k, (e.clientY - r.top) / k] as const;
     };
     const onDown = (e: PointerEvent) => {
       if (!toy) return;
@@ -106,7 +118,7 @@ export function ToyCanvas({ factory, palette, level, active }: Props) {
       canvas.removeEventListener('pointerup', onUp);
       canvas.removeEventListener('pointercancel', onUp);
     };
-  }, [factory, palette, level]);
+  }, [factory, palette, level, photo]);
 
   useEffect(() => {
     if (active) startRef.current();

@@ -109,6 +109,64 @@ const ICONS: Record<ToyId, ReactElement> = {
       <circle cx="56" cy="32" r="3" fill="#FFF3C4" />
     </g>
   ),
+  locks: (
+    <g>
+      <rect x="6" y="6" width="30" height="52" rx="5" fill="#B8A2E3" />
+      <circle cx="21" cy="18" r="6" fill="#F2A65A" />
+      <path d="M24 32 a5 5 0 0 1 10 0" fill="none" stroke="#9AA3AD" strokeWidth="3" />
+      <rect x="22" y="31" width="14" height="12" rx="3" fill="#F2C14E" />
+      <circle cx="50" cy="20" r="7" fill="#F2C14E" />
+      <rect x="48" y="25" width="4" height="26" fill="#F2C14E" /><rect x="51" y="43" width="6" height="3" fill="#F2C14E" />
+    </g>
+  ),
+  laundry: (
+    <g>
+      <path d="M4 14 Q32 24 60 14" fill="none" stroke="#8A8590" strokeWidth="2" />
+      <path d="M10 18 L16 16 L22 18 L24 26 L20 26 L20 44 L12 44 L12 26 L8 26 Z" fill="#E8676B" />
+      <path d="M30 20 L40 20 L46 48 L24 48 Z" fill="#5FAFE0" />
+      <path d="M50 18 L56 18 L56 34 Q60 34 60 38 Q60 42 54 41 L50 40 Z" fill="#F2C14E" />
+      <circle cx="54" cy="52" r="6" fill="#FBD97A" />
+    </g>
+  ),
+  town: (
+    <g>
+      <rect x="0" y="40" width="64" height="14" fill="#8A8590" />
+      <rect x="6" y="46" width="10" height="2" fill="#FFFFFF" /><rect x="26" y="46" width="10" height="2" fill="#FFFFFF" /><rect x="46" y="46" width="10" height="2" fill="#FFFFFF" />
+      <rect x="44" y="6" width="12" height="28" rx="4" fill="#3B3340" />
+      <circle cx="50" cy="12" r="3.5" fill="#E8676B" /><circle cx="50" cy="20" r="3.5" fill="#5A5560" /><circle cx="50" cy="28" r="3.5" fill="#6CC17A" />
+      <rect x="6" y="28" width="30" height="12" rx="5" fill="#F2C14E" /><rect x="12" y="20" width="18" height="10" rx="4" fill="#F2C14E" />
+      <circle cx="13" cy="41" r="4" fill="#3B3340" /><circle cx="29" cy="41" r="4" fill="#3B3340" />
+    </g>
+  ),
+  tools: (
+    <g>
+      <rect x="6" y="40" width="52" height="12" rx="3" fill="#E0B07A" />
+      <rect x="14" y="30" width="3" height="10" fill="#9AA3AD" /><rect x="40" y="34" width="3" height="6" fill="#9AA3AD" />
+      <g transform="rotate(-35 36 22)">
+        <rect x="18" y="20" width="30" height="5" rx="2" fill="#C99A6B" />
+        <rect x="44" y="14" width="9" height="17" rx="3" fill="#6A7480" />
+      </g>
+    </g>
+  ),
+  remote: (
+    <g>
+      <rect x="18" y="4" width="28" height="56" rx="12" fill="#3B3340" />
+      <circle cx="32" cy="12" r="2.5" fill="#E8676B" />
+      <circle cx="26" cy="24" r="5" fill="#E8676B" /><circle cx="38" cy="24" r="5" fill="#6CC17A" />
+      <circle cx="26" cy="37" r="5" fill="#F2C14E" /><circle cx="38" cy="37" r="5" fill="#5FAFE0" />
+      <circle cx="26" cy="50" r="5" fill="#B8A2E3" /><circle cx="38" cy="50" r="5" fill="#F2A65A" />
+    </g>
+  ),
+  phone: (
+    <g>
+      <rect x="14" y="4" width="36" height="56" rx="9" fill="#5FAFE0" />
+      <rect x="18" y="12" width="28" height="38" rx="5" fill="#EAF4FB" />
+      <circle cx="32" cy="28" r="9" fill="#F2A65A" />
+      <path d="M25 22 L27 15 L31 20 Z M39 22 L37 15 L33 20 Z" fill="#F2A65A" />
+      <circle cx="29" cy="27" r="1.4" fill="#3B3340" /><circle cx="35" cy="27" r="1.4" fill="#3B3340" />
+      <circle cx="32" cy="55" r="2.5" fill="#FFFFFF" />
+    </g>
+  ),
   stars: (
     <g>
       <circle cx="32" cy="32" r="30" fill="#4A4F80" />

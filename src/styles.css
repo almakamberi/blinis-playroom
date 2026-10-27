@@ -108,14 +108,20 @@ body.is-playroom {
 .toy-menu {
   position: absolute; inset: 0; z-index: 10;
   display: grid; place-items: center;
+  overflow-y: auto; touch-action: pan-y; overscroll-behavior: contain;
+  padding: 100px 16px 40px;
   background: color-mix(in srgb, var(--bg) 70%, transparent);
   backdrop-filter: blur(10px);
   animation: fade-in var(--dur-calm) var(--ease-soft);
 }
-.toy-menu-grid { display: grid; grid-template-columns: repeat(3, 112px); gap: 22px; }
-@media (orientation: landscape) and (max-height: 500px) { .toy-menu-grid { grid-template-columns: repeat(6, 104px); } }
+.toy-menu-grid {
+  --item: clamp(84px, 22vw, 150px);
+  display: grid; grid-template-columns: repeat(auto-fill, var(--item)); justify-content: center;
+  gap: clamp(14px, 2.5vw, 28px); width: min(100%, 1000px);
+}
+@media (orientation: landscape) and (max-height: 500px) { .toy-menu-grid { --item: 84px; } }
 .toy-menu-item {
-  width: 112px; height: 112px; border-radius: var(--radius-round); border: none;
+  width: var(--item); height: var(--item); border-radius: var(--radius-round); border: none;
   background: white; box-shadow: var(--shadow);
   display: grid; place-items: center;
   animation: pop-in var(--dur-calm) var(--ease-spring) both;
@@ -125,6 +131,19 @@ body.is-playroom {
 .toy-menu-item:nth-child(2) { animation-delay: 40ms; } .toy-menu-item:nth-child(3) { animation-delay: 80ms; }
 .toy-menu-item:nth-child(4) { animation-delay: 120ms; } .toy-menu-item:nth-child(5) { animation-delay: 160ms; }
 .toy-menu-item:nth-child(6) { animation-delay: 200ms; }
+.toy-menu-item svg { width: 64%; height: 64%; }
+
+/* Tablets: bigger, easier bubbles for bigger hands-and-screens. */
+@media (min-width: 700px) and (min-height: 600px) {
+  .edge-bubble, .home-bubble { width: 104px; height: 104px; }
+  .edge-bubble { margin-top: 0; }
+  .edge-bubble svg, .home-bubble svg { width: 58px; height: 58px; }
+  .hold-button.parent-corner { width: 56px; height: 56px; }
+  .hello .blini { width: 300px; height: 300px; }
+  .child-badge { width: 130px; height: 130px; }
+  .keypad { grid-template-columns: repeat(3, 96px); }
+  .keypad button { height: 96px; font-size: 34px; }
+}
 
 .hello {
   position: absolute; inset: 0; z-index: 20;

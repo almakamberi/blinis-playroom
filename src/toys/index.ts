@@ -11,6 +11,12 @@ import { plugItIn } from './plugs';
 import { homeGadgets } from './gadgets';
 import { kitchen } from './kitchen';
 import { littleMechanic } from './mechanic';
+import { keysAndLocks } from './locks';
+import { laundryDay } from './laundry';
+import { townRoad } from './town';
+import { toolBench } from './tools';
+import { remoteControl } from './remote';
+import { phoneCall } from './phone';
 
 export const TOY_FACTORIES: Record<ToyId, ToyFactory> = {
   bubbles: bubblePop,
@@ -24,4 +30,10 @@ export const TOY_FACTORIES: Record<ToyId, ToyFactory> = {
   gadgets: homeGadgets,
   kitchen,
   mechanic: littleMechanic,
+  locks: keysAndLocks,
+  laundry: laundryDay,
+  town: townRoad,
+  tools: toolBench,
+  remote: remoteControl,
+  phone: phoneCall,
 };

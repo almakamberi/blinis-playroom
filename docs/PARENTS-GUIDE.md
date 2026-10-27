@@ -8,7 +8,7 @@ This guide takes about 5 minutes. You don't need an account, an app store or any
 
 ## 1. What it is
 
-Blini's Playroom is a set of eleven calm toys for children of about 1 to 5 years:
+Blini's Playroom is a set of seventeen calm toys for children of about 1 to 5 years:
 
 - bubbles, singing blobs, finger paint, shape puzzles, a little garden and counting stars
 - a **Busy Board** with cables to plug in, light switches, buttons and a slider
@@ -16,14 +16,22 @@ Blini's Playroom is a set of eleven calm toys for children of about 1 to 5 years
 - **Home Gadgets**: a doorbell, a door, a water tap, a padlock and key, a dial and a zipper
 - **Kitchen**: a cooker with a bubbling pot and a frying egg, a fridge, a washing machine, a microwave, a kettle and a blender
 - **Little Mechanic**: a horn, headlights, windscreen wipers, a tyre pump, a fuel pump, an ignition key and wheel bolts
+- **Keys & Locks**: little doors with padlocks; the right key opens each one and an animal friend says hello
+- **Laundry Day**: peg the washing on the line, and watch the sun dry it, the rain wet it and a bird visit
+- **Town Road**: a garage full of vehicles, a traffic light, a duck crossing and a car wash
+- **Tool Bench**: hammer, drill, paint roller, saw, screwdriver and tape measure
+- **Remote Control**: a living room where a big remote works the TV, lamp, curtains, music and a robot vacuum
+- **Phone Call**: video-call animal friends; if you add your child's photo, they appear in the call too
 
 - There is nothing to read, nothing to win or lose, and no ads.
 - Nothing about your child is collected. Everything you set up stays on your phone.
 - Once it has been opened, it works without internet.
 
-## 2. Put it on your child's phone (Android)
+## 2. Put it on your child's phone or tablet (Android)
 
-1. On the phone your child will use, open **Chrome** and go to
+It works the same on a phone and on a tablet. On a tablet the toys automatically get bigger, the buttons get larger, and two children can play side by side, because every toy works with several fingers at once.
+
+1. On the phone or tablet your child will use, open **Chrome** and go to
    **https://almakamberi.github.io/blinis-playroom/**
 2. Tap the **⋮** menu (top right).
 3. Tap **Add to Home screen** (on some phones it says **Install app**), then **Install** or **Add**.
@@ -31,6 +39,8 @@ Blini's Playroom is a set of eleven calm toys for children of about 1 to 5 years
 5. Open it **once while you're online**, so every toy and sound is saved for offline play.
 
 **Samsung Internet:** tap the **☰** menu → **Add page to** → **Home screen**.
+
+**Tablet tips:** a sturdy case with a stand works well, so little ones can play with it flat on a table or propped up. Both landscape and portrait work; turn off *Auto-rotate* if you want the screen to stay put. With 17 toys the toy menu scrolls; you can switch off the ones your child doesn't play with in **Parent Corner → Toys**.
 
 > Tip: to stop your child leaving the app, turn on Android **App pinning**. It's under *Settings → Security* (or *Security & privacy → More settings*) → *App pinning*. Open the Playroom, open recent apps, tap the Blini icon and choose *Pin*.
 
