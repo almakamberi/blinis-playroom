@@ -20,6 +20,10 @@ No ads. No tracking. No scores, timers or winning and losing. Nothing to read. W
   <img src="docs/screenshots/splash-of-colour.png" width="180" alt="Splash of Colour">
   <img src="docs/screenshots/busy-board.png" width="180" alt="Busy Board">
 </p>
+<p>
+  <img src="docs/screenshots/plug-it-in.png" width="180" alt="Plug It In">
+  <img src="docs/screenshots/home-gadgets.png" width="180" alt="Home Gadgets">
+</p>
 
 ---
 
@@ -27,7 +31,7 @@ No ads. No tracking. No scores, timers or winning and losing. Nothing to read. W
 
 ### The Playroom (`/`)
 
-Seven original toys. Every touch gives a soft sound plus some movement, so no tap is ever "dead". Multi-touch works, so two hands can play at once.
+Nine original toys. Every touch gives a soft sound plus some movement, so no tap is ever "dead". Multi-touch works, so two hands can play at once.
 
 | Toy | What happens | Grows with the child |
 |---|---|---|
@@ -38,6 +42,8 @@ Seven original toys. Every touch gives a soft sound plus some movement, so no ta
 | **Little Garden** | Tap to drop seeds. Flowers grow with rising notes; a ladybird and then a frog come to visit. Tap the sun for a breeze. | Faster growth for babies |
 | **Counting Stars** | Tap stars to light them up and count. When all are counted they join into a constellation. An optional voice says the numbers. | 1–3 → 1–5 → 1–10 |
 | **Busy Board** | A wooden board of real-feeling gadgets: flip light switches to turn bulbs on, press big squishy buttons, slide the music slider, and plug coloured cables into their sockets. Everything on and plugged in starts a little light show. | 2 → 3 → 4 switches and cables; babies can plug any cable into any socket, older children match colours |
+| **Plug It In** | A power strip and household appliances on cables. Plug one in and it works: the lamp lights up, the fan spins, the radio plays a tune, the toaster pops toast, the phone charges, the TV switches on. Unplugged things do nothing, and their plug wiggles as a hint. | 3 → 4 → 6 appliances; Little kid adds a master power switch |
+| **Home Gadgets** | Everyday things on a wooden board: a doorbell (ding-dong), a door with a surprise visitor behind it, a water tap that fills a cup, a padlock you open with a key, a dial with a ring of lights, and a zipper hiding a star. | Baby: bell, door, tap. Toddler adds a slide bolt on the door and the padlock. Little kid adds the dial and zipper |
 
 Kid-UX rules followed throughout:
 

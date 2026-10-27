@@ -1,4 +1,4 @@
-export type ToyId = 'bubbles' | 'blobs' | 'paint' | 'shapes' | 'garden' | 'stars' | 'busy';
+export type ToyId = 'bubbles' | 'blobs' | 'paint' | 'shapes' | 'garden' | 'stars' | 'busy' | 'plugs' | 'gadgets';
 export type Level = 'baby' | 'toddler' | 'little';
 export type ThemeId = 'sky' | 'peach' | 'mint' | 'lavender' | 'night';
 export type SoundStyle = 'chimes' | 'marimba' | 'musicbox';
@@ -31,6 +31,8 @@ export const TOYS: { id: ToyId; name: string; blurb: string; accent: string }[] 
   { id: 'garden', name: 'Little Garden', blurb: 'Tap to plant seeds. Flowers grow and visitors come.', accent: '#A6D36F' },
   { id: 'stars', name: 'Counting Stars', blurb: 'Tap stars to light them up and count.', accent: '#F7D774' },
   { id: 'busy', name: 'Busy Board', blurb: 'Plug cables into sockets, flip light switches, press buttons and slide.', accent: '#F2A65A' },
+  { id: 'plugs', name: 'Plug It In', blurb: 'Plug a lamp, fan, radio, toaster, phone and TV into a power strip and watch them work.', accent: '#F2C14E' },
+  { id: 'gadgets', name: 'Home Gadgets', blurb: 'Doorbell, a door with a bolt, a water tap, padlock and key, a dial and a zipper.', accent: '#E8676B' },
 ];
 
 export const LEVELS: { id: Level; name: string; ages: string }[] = [

@@ -7,6 +7,8 @@ import { shapeFriends } from './shapes';
 import { littleGarden } from './garden';
 import { countingStars } from './stars';
 import { busyBoard } from './busy';
+import { plugItIn } from './plugs';
+import { homeGadgets } from './gadgets';
 
 export const TOY_FACTORIES: Record<ToyId, ToyFactory> = {
   bubbles: bubblePop,
@@ -16,4 +18,6 @@ export const TOY_FACTORIES: Record<ToyId, ToyFactory> = {
   garden: littleGarden,
   stars: countingStars,
   busy: busyBoard,
+  plugs: plugItIn,
+  gadgets: homeGadgets,
 };

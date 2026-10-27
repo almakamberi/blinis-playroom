@@ -66,6 +66,28 @@ const ICONS: Record<ToyId, ReactElement> = {
       <rect x="37" y="30" width="14" height="10" rx="3" fill="#E8676B" />
     </g>
   ),
+  plugs: (
+    <g>
+      <path d="M10 22 L22 22 L28 36 L4 36 Z" fill="#F2C14E" stroke="#F2C14E" strokeWidth="3" strokeLinejoin="round" />
+      <circle cx="16" cy="38" r="3" fill="#FFF3C4" />
+      <path d="M16 42 C 16 54, 40 40, 40 30" fill="none" stroke="#5A5560" strokeWidth="3.5" strokeLinecap="round" />
+      <rect x="31" y="14" width="18" height="16" rx="5" fill="#FFFFFF" stroke="#B9B2AA" strokeWidth="1.5" />
+      <rect x="35" y="30" width="3" height="6" fill="#B9B2AA" /><rect x="42" y="30" width="3" height="6" fill="#B9B2AA" />
+      <rect x="6" y="48" width="54" height="12" rx="6" fill="#FFFFFF" stroke="#B9B2AA" strokeWidth="1.5" />
+      <circle cx="20" cy="54" r="3.5" fill="#8A8590" /><circle cx="34" cy="54" r="3.5" fill="#8A8590" /><circle cx="48" cy="54" r="3.5" fill="#8A8590" />
+    </g>
+  ),
+  gadgets: (
+    <g>
+      <rect x="8" y="8" width="26" height="46" rx="4" fill="#B8956A" />
+      <rect x="11" y="11" width="20" height="41" rx="3" fill="#E8676B" />
+      <circle cx="27" cy="32" r="2.5" fill="#F2C14E" />
+      <circle cx="47" cy="20" r="9" fill="#FFFFFF" stroke="#B9B2AA" strokeWidth="1.5" />
+      <circle cx="47" cy="20" r="5" fill="#5FAFE0" />
+      <path d="M43 44 a6 6 0 0 1 12 0" fill="none" stroke="#9AA3AD" strokeWidth="3" />
+      <rect x="40" y="43" width="18" height="14" rx="4" fill="#F2C14E" />
+    </g>
+  ),
   stars: (
     <g>
       <circle cx="32" cy="32" r="30" fill="#4A4F80" />

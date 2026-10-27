@@ -8,7 +8,12 @@ This guide takes about 5 minutes. You don't need an account, an app store or any
 
 ## 1. What it is
 
-Blini's Playroom is a set of seven calm toys for children of about 1 to 5 years: bubbles, singing blobs, finger paint, shape puzzles, a little garden, counting stars, and a Busy Board with cables to plug in, light switches, buttons and a slider.
+Blini's Playroom is a set of nine calm toys for children of about 1 to 5 years:
+
+- bubbles, singing blobs, finger paint, shape puzzles, a little garden and counting stars
+- a **Busy Board** with cables to plug in, light switches, buttons and a slider
+- **Plug It In**: a power strip with a lamp, fan, radio, toaster, phone and TV that work when plugged in
+- **Home Gadgets**: a doorbell, a door, a water tap, a padlock and key, a dial and a zipper
 
 - There is nothing to read, nothing to win or lose, and no ads.
 - Nothing about your child is collected. Everything you set up stays on your phone.
@@ -48,6 +53,8 @@ You'll see a grown-ups' check: **hold the button for 3 seconds**, *or* answer th
 - Change the **order**: drag the **☰** handle, or use the ▲ ▼ buttons.
 - Set the **level** per toy, or leave it on *Automatic* to follow the age setting.
 - **Busy Board** at the *Baby* level has two cables that fit any socket. At *Toddler* and *Little kid*, each cable goes into the socket of its own colour.
+- **Plug It In** at *Little kid* adds a red power switch on the strip: when it's off, nothing works, which is a nice first lesson in how power works.
+- **Home Gadgets** adds a bolt on the door and a padlock with a key from *Toddler*, and a dial and a zipper at *Little kid*.
 
 **Look & Sound**
 - **Colour theme:** Sky, Peach, Mint, Lavender, or **Night-calm** (dim and warm, good for evenings).
