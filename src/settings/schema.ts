@@ -1,4 +1,4 @@
-export type ToyId = 'bubbles' | 'blobs' | 'paint' | 'shapes' | 'garden' | 'stars';
+export type ToyId = 'bubbles' | 'blobs' | 'paint' | 'shapes' | 'garden' | 'stars' | 'busy';
 export type Level = 'baby' | 'toddler' | 'little';
 export type ThemeId = 'sky' | 'peach' | 'mint' | 'lavender' | 'night';
 export type SoundStyle = 'chimes' | 'marimba' | 'musicbox';
@@ -30,6 +30,7 @@ export const TOYS: { id: ToyId; name: string; blurb: string; accent: string }[] 
   { id: 'shapes', name: 'Shape Friends', blurb: 'Drag shapes into their matching holes.', accent: '#8FCB9B' },
   { id: 'garden', name: 'Little Garden', blurb: 'Tap to plant seeds. Flowers grow and visitors come.', accent: '#A6D36F' },
   { id: 'stars', name: 'Counting Stars', blurb: 'Tap stars to light them up and count.', accent: '#F7D774' },
+  { id: 'busy', name: 'Busy Board', blurb: 'Plug cables into sockets, flip light switches, press buttons and slide.', accent: '#F2A65A' },
 ];
 
 export const LEVELS: { id: Level; name: string; ages: string }[] = [

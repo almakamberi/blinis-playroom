@@ -55,6 +55,17 @@ const ICONS: Record<ToyId, ReactElement> = {
       <circle cx="32" cy="24" r="6" fill="#F9DC7A" />
     </g>
   ),
+  busy: (
+    <g>
+      <rect x="4" y="8" width="56" height="48" rx="10" fill="#EBD3AE" />
+      <rect x="12" y="16" width="14" height="22" rx="5" fill="#FFF8EC" stroke="#B8956A" strokeWidth="1.5" />
+      <rect x="14" y="18" width="10" height="9" rx="3" fill="#6CC17A" />
+      <rect x="36" y="14" width="16" height="16" rx="4" fill="#5FAFE0" />
+      <rect x="40" y="18" width="8" height="8" rx="2" fill="#FFF8EC" />
+      <path d="M20 52 C 20 42, 44 50, 44 36" fill="none" stroke="#E8676B" strokeWidth="5" strokeLinecap="round" />
+      <rect x="37" y="30" width="14" height="10" rx="3" fill="#E8676B" />
+    </g>
+  ),
   stars: (
     <g>
       <circle cx="32" cy="32" r="30" fill="#4A4F80" />

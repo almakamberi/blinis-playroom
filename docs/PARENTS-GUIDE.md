@@ -8,7 +8,7 @@ This guide takes about 5 minutes. You don't need an account, an app store or any
 
 ## 1. What it is
 
-Blini's Playroom is a set of six calm toys for children of about 1 to 5 years: bubbles, singing blobs, finger paint, shape puzzles, a little garden and counting stars.
+Blini's Playroom is a set of seven calm toys for children of about 1 to 5 years: bubbles, singing blobs, finger paint, shape puzzles, a little garden, counting stars, and a Busy Board with cables to plug in, light switches, buttons and a slider.
 
 - There is nothing to read, nothing to win or lose, and no ads.
 - Nothing about your child is collected. Everything you set up stays on your phone.
@@ -47,6 +47,7 @@ You'll see a grown-ups' check: **hold the button for 3 seconds**, *or* answer th
 - Switch any toy **on or off**.
 - Change the **order**: drag the **☰** handle, or use the ▲ ▼ buttons.
 - Set the **level** per toy, or leave it on *Automatic* to follow the age setting.
+- **Busy Board** at the *Baby* level has two cables that fit any socket. At *Toddler* and *Little kid*, each cable goes into the socket of its own colour.
 
 **Look & Sound**
 - **Colour theme:** Sky, Peach, Mint, Lavender, or **Night-calm** (dim and warm, good for evenings).

@@ -18,7 +18,7 @@ No ads. No tracking. No scores, timers or winning and losing. Nothing to read. W
   <img src="docs/screenshots/little-garden.png" width="180" alt="Little Garden">
   <img src="docs/screenshots/counting-stars.png" width="180" alt="Counting Stars">
   <img src="docs/screenshots/splash-of-colour.png" width="180" alt="Splash of Colour">
-  <img src="docs/screenshots/toy-menu.png" width="180" alt="Toy menu (icons only)">
+  <img src="docs/screenshots/busy-board.png" width="180" alt="Busy Board">
 </p>
 
 ---
@@ -27,7 +27,7 @@ No ads. No tracking. No scores, timers or winning and losing. Nothing to read. W
 
 ### The Playroom (`/`)
 
-Six original toys. Every touch gives a soft sound plus some movement, so no tap is ever "dead". Multi-touch works, so two hands can play at once.
+Seven original toys. Every touch gives a soft sound plus some movement, so no tap is ever "dead". Multi-touch works, so two hands can play at once.
 
 | Toy | What happens | Grows with the child |
 |---|---|---|
@@ -37,6 +37,7 @@ Six original toys. Every touch gives a soft sound plus some movement, so no tap 
 | **Shape Friends** | Drag smiling shapes into their matching holes. They snap in with a happy wiggle; finish them all for a small celebration and a new round. | 2 → 3 → 5 shapes, bigger snap zone for babies |
 | **Little Garden** | Tap to drop seeds. Flowers grow with rising notes; a ladybird and then a frog come to visit. Tap the sun for a breeze. | Faster growth for babies |
 | **Counting Stars** | Tap stars to light them up and count. When all are counted they join into a constellation. An optional voice says the numbers. | 1–3 → 1–5 → 1–10 |
+| **Busy Board** | A wooden board of real-feeling gadgets: flip light switches to turn bulbs on, press big squishy buttons, slide the music slider, and plug coloured cables into their sockets. Everything on and plugged in starts a little light show. | 2 → 3 → 4 switches and cables; babies can plug any cable into any socket, older children match colours |
 
 Kid-UX rules followed throughout:
 
@@ -146,4 +147,4 @@ Tip: service workers and the install prompt need HTTPS (or `localhost`). To test
 - Parent accounts and sync across devices (Supabase or Firebase)
 - Family voice clips ("Hi!", "Well done!") and Animal Sounds with recorded voices
 - Photo Frame: family photos floating in as bubbles
-- Busy Board, Lullaby Mode
+- More Busy Board gadgets (dial, zipper, door with a surprise), Lullaby Mode

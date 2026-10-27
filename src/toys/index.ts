@@ -6,6 +6,7 @@ import { splashOfColour } from './paint';
 import { shapeFriends } from './shapes';
 import { littleGarden } from './garden';
 import { countingStars } from './stars';
+import { busyBoard } from './busy';
 
 export const TOY_FACTORIES: Record<ToyId, ToyFactory> = {
   bubbles: bubblePop,
@@ -14,4 +15,5 @@ export const TOY_FACTORIES: Record<ToyId, ToyFactory> = {
   shapes: shapeFriends,
   garden: littleGarden,
   stars: countingStars,
+  busy: busyBoard,
 };
